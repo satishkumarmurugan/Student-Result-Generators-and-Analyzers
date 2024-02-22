@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link href="../static/styles.css" rel="stylesheet">  
+</head>
+<body>
+    <h1>Upload Files and Input Data for Report</h1>
+    <form action="/report" method="post" enctype="multipart/form-data">
+        <div class="form-container">
+            <div class="left-div">
+                <div class="top">
+                    <label for="file">Upload Excel Files:</label>
+                    <input type="file" id="file" name="file" accept=".xlsx, .xls"><br>
+    
+                    <label for="sem">Which SEM:</label>
+                    <input type="text" id="sem" name="sem" required><br>
+    
+                    <label for="year">YEAR(FE,SE,TE,BE):</label>
+                    <input type="text" id="year" name="year" required><br>
+    
+                    <label for="div">DIV:</label>
+                    <input type="text" id="div" name="div" required><br>
+    
+                    <label for="half">Half(1,2):</label>
+                    <input type="text" id="half" name="half" required><br>
+    
+                    <label for="batch">Batch:</label>
+                    <input type="text" id="batch" name="batch" required><br>
+    
+                    <label for="dep">Department:</label>
+                    <input type="text" id="batch" name="dep" required><br>
+                </div>
+            </div>
+    
+            <div class="right-div">
+                <label for="s1">Enter the Subject1 name and incharge:</label>
+                <input type="text" class="Subject" name="s1" required><br>
+                <input type="text" class="Subject" name="si1" required><br>
+    
+                <label for="s2">Enter the Subject2 name and incharge:</label>
+                <input type="text" class="Subject" name="s2" required><br>
+                <input type="text" class="Subject" name="si2" required><br>
+    
+                <label for="s3">Enter the Subject3 name and incharge:</label>
+                <input type="text" class="Subject" name="s3" required><br>
+                <input type="text" class="Subject" name="si3" required><br>
+    
+                <label for="s4">Enter the Subject4 name and incharge:</label>
+                <input type="text" class="Subject" name="s4" required><br>
+                <input type="text" class="Subject" name="si4" required><br>
+    
+                <label for="s5">Enter the Subject5 name and incharge:</label>
+                <input type="text" class="Subject" name="s5" required><br>
+                <input type="text" class="Subject" name="si5" required><br>
+            </div>
+        </div>
+    
+        <input type="submit" value="Generate Report">
+    </form>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flash-messages">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <a href="/logout"><button>logout</button></a>
+</body>
+</html>

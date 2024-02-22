@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Toppers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .upload-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .upload-button {
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .upload-button:hover {
+            background-color: #e9e9e9;
+        }
+        #file {
+            display: none;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Finding Toppers</h1>
+        <div class="upload-container">
+            <form action="/topper" method="post" enctype="multipart/form-data">
+                <label for="file" class="upload-button">Choose Excel File</label>
+                <input type="file" name="file" id="file">
+                <p class="error">{{ error }}</p>
+                <input type="submit" value="Upload">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+

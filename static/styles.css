@@ -1,0 +1,120 @@
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a pleasant background color and text color */
+body {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Center the form on the page */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the form container */
+form {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight:border_format1;
+}
+
+/* Style form inputs */
+input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-weight:border_format1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    
+}
+
+/* Style flash messages */
+ul.flash-messages {
+    list-style: none;
+    padding: 0;
+}
+
+ul.flash-messages li {
+    color: #007bff;
+    text-align: center;
+}
+
+/* Style the logout button */
+a {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+/* Style the logout button as a solid button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight:border_format1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-div {
+    width: 48%; /* Adjust as needed */
+}
+
+.right-div {
+    width: 48%; /* Adjust as needed */
+}
+
+/* Additional styling for better presentation */
+.top {
+    margin-bottom: 20px;
+}
+
+.Subject {
+    margin-bottom: 10px;
+}
