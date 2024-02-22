@@ -15,19 +15,13 @@ pip install requirement.txt
 1. Clone the repository to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/satishkumarmurugan/Student-Result-Generators-and-Analyzers.git 
 ```
 
-2. Navigate to the project directory:
+2. Run the application:
 
 ```bash
-cd <project-directory>
-```
-
-3. Run the application:
-
-```bash
-python <filename>.py
+python app.py
 ```
 
 ## Usage
